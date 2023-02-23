@@ -19,5 +19,9 @@ describe Solved do
         it 'returns reversed string' do
             expect(subject.reverse('hello')).to eq('olleh')
         end
+
+        it 'returns error when less arguments' do
+            expect { subject.reverse }.to raise_error(ArgumentError)
+        end
     end
 end
