@@ -14,4 +14,10 @@ describe Solved do
             expect(subject.factorial(5)).to eq(120)
         end
     end
+
+    describe '#reverse' do
+        it 'returns reversed string' do
+            expect(subject.reverse('hello')).to eq('olleh')
+        end
+    end
 end
